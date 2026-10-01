@@ -66,6 +66,10 @@ function ComplainPage() {
         Explain your concern clearly. Your message will be sent Directly to the Principal. Please be respectful and concise in your message.
       </p>
 
+      <p className="text-red-600 mb-6 md:mb-8 text-center max-w-xl mt-4 md:mt-1">
+        Please Wait For <span className="font-bold">3 - 5</span> Seconds After Submitting
+      </p>
+
       <div className="w-full max-w-xl">
         <label className="block font-medium text-center mb-4">Concern Category</label>
         <select
