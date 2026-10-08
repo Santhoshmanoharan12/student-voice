@@ -114,7 +114,7 @@ function ComplainPage() {
         <label className="block mb-7 font-medium">Subject</label>
         <input
           type="text"
-          placeholder="Enter the subject"
+          placeholder="Enter the subject in one line"
           className="w-full border border-gray-400 rounded-md px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
@@ -122,7 +122,7 @@ function ComplainPage() {
 
         <label className="block mb-6 mt-3 font-medium">Your Concern</label>
         <textarea
-          placeholder="Describe your concern..."
+          placeholder="Describe your concern in detail..."
           rows={7}
           className="w-full border border-gray-400 rounded-md px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500"
           value={concern}
