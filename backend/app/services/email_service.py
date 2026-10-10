@@ -1,6 +1,7 @@
 import os
 import smtplib
 from email.message import EmailMessage
+from app.services.delete_email import delete_from_sent
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -21,11 +22,13 @@ def _send_email(to_email: str, subject: str, body: str):
         smtp_server.send_message(message)
 
 def send_otp_email(email: str, otp: int):
+    subject_keyword = "Your Student Voice OTP"
     _send_email(
         to_email=email,
         subject="Your Student Voice OTP",
         body=f"Your OTP is {otp}. It expires in 5 minutes.\n\nIf you didn't request this, ignore this email. \n\nIMPORTANT NOTE : After OTP verification and Complaint submission, Please Delete this email for your own security."
     )
+    delete_from_sent(subject_keyword)
 
 def send_complaint_email(subject: str, concern: str, category: str):
     _send_email(
