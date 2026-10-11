@@ -3,7 +3,7 @@
 FastAPI backend for the Student Voice complaint portal. Handles email domain verification (OTP), session tokens, and routes complaints directly to the Principal's inbox via email — with no database and no persistent storage of student identity or complaint data.
 
 ## Tech Stack
-
+app
 - FastAPI
 - Pydantic (request validation)
 - smtplib (Gmail SMTP for email delivery - Simple Mail Transfer Protocol)
