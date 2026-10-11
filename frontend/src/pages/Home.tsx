@@ -43,9 +43,9 @@ function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center font-sans bg-linear-to-b from-purple-100 to-purple-200 w-full px-4">
-      <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 md:mb-14 text-purple-600 text-center">Student Voice</h1>
-      <p className="text-base md:text-lg max-w-xl text-center mt-4 mb-8 md:mb-12 text-purple-800">
+    <div className="min-h-screen flex flex-col items-center justify-center font-sans bg-linear-to-b from-sky-400 to-white-100 w-full px-4">
+      <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 md:mb-14 text-indigo-600 text-center">Student Voice</h1>
+      <p className="text-base md:text-lg max-w-xl text-center mt-4 mb-8 md:mb-12 text-indigo-800">
         A Direct Line of Communication Between Students and the College Principal of KRCE
       </p>
       <input
@@ -53,13 +53,16 @@ function Home() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Enter Your KRCE Domain Email"
-        className="border border-gray-400 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 w-full max-w-md mb-6"
+        className="border border-gray-400 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-700 w-full max-w-md mb-6"
       />
+
+    <p className="text-indigo-600 font-medium md:text-lg max-w-xl text-center">Wait for 10 - 15 seconds after click on continue</p>
+
       {error && <p className="text-red-600 font-medium mb-6 text-center">{error}</p>}
       <button
         onClick={handleBtnClick}
         disabled={loading}
-        className="bg-green-500 text-white rounded-md py-2 px-4 mt-4 hover:bg-purple-600 disabled:opacity-50"
+        className="bg-green-500 text-white rounded-md py-2 px-4 mt-4 hover:bg-indigo-600 disabled:opacity-50"
       >
         {loading ? "Sending..." : "Continue"}
       </button>
