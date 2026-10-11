@@ -48,9 +48,9 @@ function Verify() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-b from-purple-100 to-purple-200 font-sans px-4">
-      <h1 className="text-3xl md:text-4xl font-bold text-purple-600 mb-6 md:mb-8 text-center">Verify Your Email</h1>
-      <p className="text-purple-800 text-center max-w-md mb-6 md:mb-8">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-b from-sky-300 to-white-300 font-sans px-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-indigo-600 mb-6 md:mb-8 text-center">Verify Your Email</h1>
+      <p className="text-indigo-800 text-center max-w-md mb-6 md:mb-8">
         We have sent a verification code to <strong>{email}</strong>.
       </p>
       <div className="w-full max-w-md">
@@ -61,13 +61,13 @@ function Verify() {
           onChange={(e) => setOtp(e.target.value)}
           placeholder="Enter 6-digit OTP"
           maxLength={6}
-          className="w-full border border-gray-400 rounded-md px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full border border-gray-400 rounded-md px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
         {error && <p className="text-red-600 font-medium mb-4 text-center">{error}</p>}
         <button
           onClick={handleVerify}
           disabled={loading}
-          className="w-full bg-green-500 text-white rounded-md py-2 px-6 hover:bg-purple-600 disabled:opacity-50"
+          className="w-full bg-green-500 text-white rounded-md py-2 px-6 hover:bg-indigo-600 disabled:opacity-50"
         >
           {loading ? "Verifying..." : "Verify"}
         </button>
