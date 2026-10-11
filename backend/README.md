@@ -24,6 +24,7 @@ app/
     otp.py               # OTP generation, in-memory storage, verification
     session.py            # Short-lived, single-use session tokens
     email_service.py      # Sends OTP email + complaint email via Gmail SMTP
+    delete_email.py       # Deletes the OTP sended domain email from the college email
 ```
 
 ## Setup
