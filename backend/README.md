@@ -7,6 +7,7 @@ FastAPI backend for the Student Voice complaint portal. Handles email domain ver
 - FastAPI
 - Pydantic (request validation)
 - smtplib (Gmail SMTP for email delivery - Simple Mail Transfer Protocol)
+- imaplib (used to connect to email servers and manage messages using the Internet Message Access Protocol (IMAP))
 - python-dotenv (environment variable management)
 
 ## Project Structure
