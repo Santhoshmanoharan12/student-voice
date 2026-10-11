@@ -60,9 +60,9 @@ function ComplainPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-b from-purple-100 to-purple-200 font-sans px-4 py-8">
-      <h1 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 mt-4 md:mt-8 text-center">Submit Your Concern</h1>
-      <p className="text-purple-800 mb-6 md:mb-8 text-center max-w-xl mt-4 md:mt-9">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-b from-sky-300 to-white-100 font-sans px-4 py-8">
+      <h1 className="text-3xl md:text-4xl font-bold text-indigo-600 mb-4 mt-4 md:mt-8 text-center">Submit Your Concern</h1>
+      <p className="text-indigo-800 mb-6 md:mb-8 text-center max-w-xl mt-4 md:mt-9">
         Explain your concern clearly. Your message will be sent Directly to the Principal. Please be respectful and concise in your message.
       </p>
 
@@ -75,7 +75,7 @@ function ComplainPage() {
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="w-full border border-gray-400 rounded-md px-4 py-8 mb-6"
+          className="w-full border border-gray-500 rounded-md px-4 py-8 mb-6"
         >
           <option value="">Select a category</option>
           <option value="academic">Academic</option>
@@ -115,7 +115,7 @@ function ComplainPage() {
         <input
           type="text"
           placeholder="Enter the subject in one line"
-          className="w-full border border-gray-400 rounded-md px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full border border-gray-400 rounded-md px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
         />
@@ -124,7 +124,7 @@ function ComplainPage() {
         <textarea
           placeholder="Describe your concern in detail..."
           rows={7}
-          className="w-full border border-gray-400 rounded-md px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full border border-gray-400 rounded-md px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           value={concern}
           onChange={(e) => setConcern(e.target.value)}
         />
@@ -138,7 +138,7 @@ function ComplainPage() {
 
         <button
           onClick={handleSubmit}
-          className="bg-green-500 text-white rounded-md py-2 px-6 hover:bg-purple-600 mb-13 mt-3"
+          className="bg-green-500 text-white rounded-md py-2 px-6 hover:bg-indigo-600 mb-13 mt-3"
         >
           Submit Concern
         </button>
